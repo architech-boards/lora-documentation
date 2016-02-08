@@ -66,6 +66,8 @@ Build & Debug
 
 Go to **Project->Build All**, to compile the entire project. Therefore in order to debug it connect the J-Link to the connector **CN4**. The debug interface used is **SWD**. Then turn on the board switching the **SW1**.
 
+.. image:: _static/board_jlink.jpg
+
 Always on the KDS click on **Run->Debug Confiuration->GDB Segger J-Link Debug**.
 
 .. image:: _static/kds_debug.jpg

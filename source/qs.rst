@@ -34,22 +34,23 @@ After the registration you can close the window device manager and in the main p
 
 .. image:: _static/actility_logger.jpg
 
-Here you will see all the messages sent by your device. So keep the board on the table and turn on the Lora Sensor Node clicking on the switch.
+Here you will see all the messages sent by your device. Now take your board:
 
-.. image:: _static/changeme.jpg
+.. image:: _static/board_bare.jpg
+
+insert antenna and battery and keeping the board on the table turn on the Lora Sensor Node clicking on the switch.
+
+.. image:: _static/board_on.jpg
 
 Now the device is in sleeping mode, it in 30 seconds will wakeup and it is going to sent a message. For skipping the sleeping fase, click on **S2** button.
 
-.. image:: _static/changeme.jpg
+.. image:: _static/board_s2.jpg
 
 Clicking on **Refresh** button you will see the first message sent by your device. Now tilt your board to 90 degree and wait 30 seconds.
 
-.. image:: _static/changeme.jpg
+.. image:: _static/board_tilt.jpg
 
 The board will send another message. Now it's time to see the data sent. Power off the board. And from the logger windows you will have 2 rows, every row is a message received from the server.
-
-.. image:: _static/changeme.jpg
-
 If you click on the **+** node you can see the uncripted data reveived **Payload (hex):**. All messages start with the number 18, the other three number couples are the data read from the acceleromter mounted on the board. You will see the data changed when you have tilted the board and sent the second message.
 
 .. image:: _static/actility_logger2.jpg
