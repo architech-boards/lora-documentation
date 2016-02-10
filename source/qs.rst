@@ -38,9 +38,9 @@ Here you will see all the messages sent by your device. Now take your board:
 
 .. image:: _static/board_bare.jpg
 
-insert antenna and battery and keeping the board on the table turn on the Lora Sensor Node clicking on the switch.
+insert antenna and battery and keeping the board on the table switch on the Lora Sensor Node.
 
-.. image:: _static/board_on.jpg
+.. image:: _static/board_switch.jpg
 
 Now the device is in sleeping mode, it in 30 seconds will wakeup and it is going to sent a message. For skipping the sleeping fase, click on **S2** button.
 

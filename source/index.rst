@@ -32,7 +32,7 @@ The RN2483 is a LoRa™-integrated modem with a range of more than 15 km (suburb
 
 .. image:: _static/LoRa-Main-Lrge.jpg
 
-The RN2483 is a fully-certified 433/868 MHz module based on wireless LoRa® technology. The RN2483 utilizes a unique spread spectrum modulation within the Sub-GHz band to enable long range, low power, and high network capacity.
+The RN2483 is a fully-certified 433/868 MHz module based on wireless LoRa® technology.
 
 The module's embedded LoRaWAN™ Class A protocol enables seamless connectivity to any LoRaWAN compliant network infrastructure, whether public or privately deployed.  The module is specifically designed for ease of use, which shortens development time and speeds time to market.  LoRa technology is ideal for battery-operated sensors and low power applications such as IoT, M2M, Smart City, Sensor networks, Industrial automation, and more.
 
