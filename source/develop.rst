@@ -27,7 +27,7 @@ First up, register at the NXP website `registration form <https://www.nxp.com/we
 
 Therefore launch the downloaded file **Kinetis Design Studio installer for Microsoft Windows 3.0.0.exe** following all the default options. During the installation will be installed also SEGGER J-Link drivers.
 
-If you want modify the project using **processor expert** it is required to install also the package KSDK 1.3.0 because with the installation of the Kinetis Design Studio 3.0.0 is installed the KSDK 1.2.0 version and it is not compatible with the project.
+If you want to modify the project using **processor expert** it is required to install also the package KSDK 1.3.0 because with the installation of the Kinetis Design Studio 3.0.0 is installed the KSDK 1.2.0 version and it is not compatible with the project.
 
 Launch KDS and select a directory for the workspace. In this folder will be imported our project. In this guide we used this path:
 

@@ -5,8 +5,8 @@
 Quick start guide
 -----------------
 
-In order to see working the Sensor Node Lora you have to register the device on the `actility website <http://actility.thingpark.com/portal/web>`_ clicking on **Create an account**.
-After the registration log in and you will access to the main page.
+In order to see working the Sensor Node Lora you have to register the device on the `activity website <http://actility.thingpark.com/portal/web>`_ clicking on **Create an account**.
+After the registration login and you will access to the main page.
 
 .. image:: _static/actility_main.jpg
 
@@ -30,7 +30,7 @@ In this form you have to insert the data in the following mandatory fields:
 
 Then click on the top right **+ create**.
 
-After the registration you can close the window device manager and in the main page go to **Logger**.
+After the registration, you can close the window device manager and on the main page go to **Logger**.
 
 .. image:: _static/actility_logger.jpg
 
@@ -42,16 +42,16 @@ insert antenna and battery and keeping the board on the table switch on the Lora
 
 .. image:: _static/board_switch.jpg
 
-Now the device is in sleeping mode, it in 30 seconds will wakeup and it is going to sent a message. For skipping the sleeping fase, click on **S2** button.
+Now the device is in sleeping mode, it in 30 seconds will wake up and it is going to sent a message. For skipping the sleeping phase, click on **S2** button.
 
 .. image:: _static/board_s2.jpg
 
-Clicking on **Refresh** button you will see the first message sent by your device. Now tilt your board to 90 degree and wait 30 seconds.
+Clicking on **Refresh** button you will see the first message sent by your device. Now tilt your board to 90 degrees and wait 30 seconds.
 
 .. image:: _static/board_tilt.jpg
 
-The board will send another message. Now it's time to see the data sent. Power off the board. And from the logger windows you will have 2 rows, every row is a message received from the server.
-If you click on the **+** node you can see the uncripted data reveived **Payload (hex):**. All messages start with the number 18, the other three number couples are the data read from the acceleromter mounted on the board. You will see the data changed when you have tilted the board and sent the second message.
+The board will send another message. Now it's time to see the data sent. Power off the board. And from the logger window, you will have 2 rows, every row is a message received from the server.
+If you click on the **+** node you can see the unencrypted data received **Payload (hex):**. All messages start with the number 18, the other three number couples are the data read from the accelerometer mounted on the board. You will see the data changed when you have tilted the board and sent the second message.
 
 .. image:: _static/actility_logger2.jpg
 

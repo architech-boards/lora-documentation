@@ -11,7 +11,7 @@ Welcome to Sensor Node Lora documentation!
 Microchip’s Long Range Low Power End Node solution
 --------------------------------------------------
 
-.. image:: _static/logo_silica_nxp_micro.jpg
+.. image:: _static/logo_silica_microchip.jpg
 
 .. image:: _static/board_on.jpg
 
@@ -28,7 +28,7 @@ With the growing Internet of Things, Microchip has a LoRa® Technology wireless 
 
 Microchip’s LoRa Technology solution is ready to run out-of-the box and with the complete LoRaWAN™ Protocol and certifications in place, it reduces time to market and saves development costs. 
 
-The RN2483 is a LoRa™-integrated modem with a range of more than 15 km (suburban), low power enabling a battery life greater than 10 years and the ability to connect millions of wireless sensor nodes to LoRa gateways and IoT-connected Cloud Servers. This robust system is due to LoRa’s unique spread-spectrum based modulation that is capable of demodulation 20 dB below noise level. This enables high sensitivity for ultra-long range, improved network efficiency and eliminates interference. The RN2483 modem operates over the 433 and 868 MHz license-free Industry Scientific and Medical (ISM) frequency bands and serves as the end-device in the LoRa network infrastructure.
+The RN2483 is a LoRa™-integrated modem with a range of more than 15 km (suburban), low power enabling a battery life greater than 10 years and the ability to connect millions of wireless sensor nodes to LoRa gateways and IoT-connected Cloud Servers. This robust system is due to LoRa’s unique spread-spectrum based modulation that is capable of demodulation 20 dB below the noise level. This enables high sensitivity for ultra-long range, improved network efficiency and eliminates interference. The RN2483 modem operates over the 433 and 868 MHz license-free Industry Scientific and Medical (ISM) frequency bands and serves as the end-device in the LoRa network infrastructure.
 
 .. image:: _static/LoRa-Main-Lrge.jpg
 

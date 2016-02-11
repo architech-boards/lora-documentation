@@ -17,16 +17,16 @@ The board is provided with:
 
 The Microchip RN2483 module provides LoRaWAN™ protocol connectivity using a simple UART interface. The NXP **MKLS26Z** is connected to the Microchip modules using the configuration 57600 8N1 without using RTS, CTS lines.
 
-The Light Sensor is read from the ADC converter pheriperal of the MKL26Z.
+The Light Sensor is read from the ADC converter peripheral of the MKL26Z.
 
-The Acclerometer sensor is read from I2C interface.
+The Accelerometer sensor is read from I2C interface.
 
 The microcontroller uses the deep sleep mode **VLPS**, it is waken up from LPTimer every 30 seconds or pin interrupt connected to the **S2** button.
 
 Configuration RN2483
 ********************
 
-The connection used by **RN2483** is **ABP** (Activation by Personalization). To use this connection it is required setup the RN device only one time. Every Lora Sensor Node bought are already configured. The commands used were:
+The connection used by **RN2483** is **ABP** (Activation by Personalization). To use this connection it is required setup the RN device only one time. Every Lora Sensor Node bought is already configured. The commands used were:
 
  | sys get hweui
  | mac set deveui [hweui key read]
