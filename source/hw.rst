@@ -28,12 +28,12 @@ Configuration RN2483
 
 The connection used by **RN2483** is **ABP** (Activation by Personalization). To use this connection it is required setup the RN device only one time. Every Lora Sensor Node bought is already configured. The commands used were:
 
+ | sys factoryRESET
  | sys get hweui
  | mac set deveui [hweui key read]
  | mac set devaddr [last less significant hexs of hweui key]
  | mac set appskey AFBECD56473829100192837465FAEBDC
- | mac set nwkskey [hweui key repeated 2 times]
- | mac set retx 0
+ | mac set nwkskey [hweui key repeated two times]
  | mac save
 
 After saving this setup is not required repeat the opeation of setup. In order to send data in the Lora network the two commands used are:
