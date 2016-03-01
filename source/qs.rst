@@ -20,7 +20,10 @@ Click with the left button of the mouse on the **Devices** folder and select **+
 
 In this form you have to insert the data we have stored in the RN2483. The following fields are mandatory:
 
-- **Device EUI**: the 16-hex identification key of the device. It is unique for every device, you can read it on the label of the board, in the bottom side. For example the code can be **0004A30B001B9954**
+- **Device EUI**: the 16-hex identification key of the device. It is unique for every device, you can read it on the label of the board as in the image. For example the code can be **0004A30B001B9954**
+
+.. image:: _static/euid_label.jpg
+
 - **Network address**: last 4 less significant bytes from the Device EUI key, for example if the code is **0004A30B001B9954** then the network address will be **001B9954**
 - **Device profile**: **LoRaWAN 1.0 class A**
 - **Network key (hexa)**: we have already saved it in the RN2834 device, it is the **Device EUI** key copied *twice*, for example if the device EUI is **0004A30B001B9954** then the **network key** you have to insert will be **0004A30B001B99540004A30B001B9954**.
