@@ -6,7 +6,7 @@ Quick start guide
 -----------------
 
 In order to see working the Sensor Node Lora you have to register the device on the `activity website <http://actility.thingpark.com/portal/web>`_ clicking on **Create an account**.
-After the registration login and you will access to the main page.
+After the registration login and you will access the main page.
 
 .. image:: _static/actility_main.jpg
 
@@ -14,7 +14,7 @@ First up we have to register your Microchip RN2483 device, to do this, click on 
 
 .. image:: _static/actility_device_manager.jpg
 
-Click with the left button of the mouse on the **Devices** folder and select **+ Create**.
+Click the right mouse button on the **Devices** folder and select **+ Create**.
 
 .. image:: _static/actility_create.jpg
 
@@ -52,15 +52,15 @@ insert antenna and battery and keeping the board on the table switch on the Lora
 
 .. image:: _static/board_switch.jpg
 
-Now the device is in sleeping mode, it in 30 seconds will wake up and it is going to sent a message. For skipping the sleeping phase, click on **S2** button.
+Now the device is in sleeping mode, in 30 seconds it will wake up and it is going to sent a message. For skipping the sleeping phase, press **S2** button.
 
 .. image:: _static/board_s2.jpg
 
-Clicking on **S2** button you will see the first message sent by your device. Now tilt your board to 90 degrees and wait 30 seconds.
+After pressing **S2** button you will see the first message sent by your device. Now tilt your board to 90 degrees and wait 30 seconds.
 
 .. image:: _static/board_tilt.jpg
 
-The board will send another message. Now it's time to see the data sent. Power off the board. And from the logger window, you will have 2 rows, every row is a message received from the server.
+The board will send another message. Now it's time to see the data sent. Power off the board. And in the logger window, you will have 2 rows, every row is a message received from the server.
 If you click on the **+** node you can see the unencrypted data received **Payload (hex):**. All messages start with the number 18, the other three number couples are the data read from the accelerometer mounted on the board. You will see the data changed when you have tilted the board and sent the second message.
 
 .. image:: _static/actility_logger2.jpg

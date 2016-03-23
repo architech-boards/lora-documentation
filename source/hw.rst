@@ -21,12 +21,12 @@ The Light Sensor is read from the ADC converter peripheral of the MKL26Z.
 
 The Accelerometer sensor is read from I2C interface.
 
-The microcontroller uses the deep sleep mode **VLPS**, it is waken up from LPTimer every 30 seconds or pin interrupt connected to the **S2** button.
+The microcontroller uses the deep sleep mode **VLPS**, it is waken up by LPTimer every 30 seconds or by pin interrupt connected to the **S2** button.
 
 Configuration RN2483
 ********************
 
-The connection used by **RN2483** is **ABP** (Activation by Personalization). To use this connection it is required setup the RN device only one time. Every Lora Sensor Node bought is already configured. The commands used were:
+The connection used by **RN2483** is **ABP** (Activation by Personalization). To use this connection it is required to setup the RN device only one time. Every Lora Sensor Node bought is already configured. The commands used were:
 
  | sys factoryRESET
  | sys get hweui
@@ -36,7 +36,7 @@ The connection used by **RN2483** is **ABP** (Activation by Personalization). To
  | mac set nwkskey [hweui key repeated two times]
  | mac save
 
-After saving this setup is not required repeat the opeation of setup. In order to send data in the Lora network the two commands used are:
+After saving this setup is not required repeat the opeation of setup. In order to send data in the Lora network the two used commands are:
 
 - **mac join abp**: used to join the Lora network
 
