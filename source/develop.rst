@@ -14,7 +14,7 @@ The main steps are:
 
 Hardware required:
 
-- Sensor Node Lora with battery
+- Sensor Node Lora with battery or Mini-USB cable
 
 - Segger J-Link (`Segger website <https://www.segger.com/jlink_base.html>`_) with SWD debug interface
 
