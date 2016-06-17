@@ -156,7 +156,7 @@ Processor Expert
 
 The **Kinetis software development kit (KSDK)** is an extensive suite of robust hardware interface and hardware abstraction layers, peripheral drivers, RTOS abstractions, stacks, and middleware designed to simplify and accelerate application development on Freescale Kinetis MCUs. The addition of **Processor
 Expert** technology for software and board configuration provides unmatched ease of use and flexibility. Included in the Kinetis SDK is full source code under a permissive open-source license for all hardware abstraction and peripheral driver software. Mainline releases include support for a collection of Kinetis
-MCUs, whereas standalone releases offer support for one or a few additional Kinetis MCUs only. For details read `KSDK page <www.freescale.com/ksdk>`_.
+MCUs, whereas standalone releases offer support for one or a few additional Kinetis MCUs only. For details read `KSDK page <http://www.freescale.com/ksdk>`_.
 
 
 
