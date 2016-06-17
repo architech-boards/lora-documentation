@@ -8,6 +8,7 @@ Hardware Guide
 The board is provided with:
 
 - NXP MKL26Z microprocessor
+- NXP MK20DX128VFM5 microprocessor
 - Microchip RN2483 Module
 - Light Sensor
 - Reset button
@@ -15,7 +16,7 @@ The board is provided with:
 - NXP FXOS8700CQR1 Accelerometer and Magnetometer sensor
 - LEDs which one is used directly by KL26Z
 
-The Microchip RN2483 module provides LoRaWAN™ protocol connectivity using a simple UART interface. The NXP **MKLS26Z** is connected to the Microchip modules using the configuration 57600 8N1 without using RTS, CTS lines.
+The Microchip RN2483 module provides LoRaWAN™ protocol connectivity using a simple UART interface. The NXP **MKLS26Z** is connected to the Microchip modules using the configuration 57600 8N1 without using RTS, CTS lines. Last version used is **1.0.1**.
 
 The Light Sensor is read from the ADC converter peripheral of the MKL26Z.
 
