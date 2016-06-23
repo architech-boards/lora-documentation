@@ -27,6 +27,11 @@ In this form you have to insert the data we have stored in the RN2483. The follo
 .. image:: _static/euid_label.jpg
 
 - **Network address**: last 4 less significant bytes from the Device EUI key, for example if the code is **0004A30B001B9954** then the network address will be **001B9954**
+
+.. note::
+
+  if your board has the Mini-USB connector then the key will be the last 4 less significant bytes from the Device EUI key but the first character will be **8** and not **0**. So in this example it will be **801B9954**
+
 - **Device profile**: **LoRaWAN 1.0 class A**
 - **Network key (hexa)**: we have already saved it in the RN2834 device, it is the **Device EUI** key copied *twice*, for example if the device EUI is **0004A30B001B9954** then the **network key** you have to insert will be **0004A30B001B99540004A30B001B9954**.
 - **Application keys**: Insert **AFBECD56473829100192837465FAEBDC**, port **4**. We have saved it in the RN2834 device.
