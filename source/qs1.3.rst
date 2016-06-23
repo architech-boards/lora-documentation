@@ -1,9 +1,11 @@
-.. index:: qs
+.. index:: qs1.3
 
-.. _quick:
+.. _quick13:
 
-Quick start guide
------------------
+Quick start guide with firmware 1.3 or major
+--------------------------------------------
+
+If you don't have a firmware 1.3 or major please go to develompent :ref:`develop`.
 
 In order to see working the Sensor Node Lora you have to register the device on the `activity website <http://actility.thingpark.com/portal/web>`_ clicking on **Create an account**.
 After the registration login and you will access the main page.
@@ -74,7 +76,7 @@ The board doesn't have the correct **device address** in order to send correctly
 
 .. image:: _static/putty_serial.jpg
 
-5. Press the **Open** button. Now reset the board pressing **S3** button and keeping **S2** button pressed for 5 seconds. 
+5. Press the **Open** button. Now reset the board pressing **S3** button and after keep the **S2** button pressed for 5 seconds. 
 
 .. image:: _static/board_s2_s3.jpg
 

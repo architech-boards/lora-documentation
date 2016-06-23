@@ -67,7 +67,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   qs
+   qs1
+   qs1.3
    develop
    hw
 
