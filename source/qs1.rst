@@ -30,7 +30,7 @@ In this form you have to insert the data we have stored in the RN2483. The follo
 
 .. note::
 
-  if your board has the Mini-USB connector then the key will be the last 4 less significant bytes from the Device EUI key but the first character will be **8** and not **0**. So in this example it will be **801B9954**
+  if your board has the Mini-USB connector then the key will be the last 4 less significant bytes from the Device EUI key but the second character will be **8** and not **0**. So in this example it will be **081B9954**
 
 - **Device profile**: **LoRaWAN 1.0 class A**
 - **Network key (hexa)**: we have already saved it in the RN2834 device, it is the **Device EUI** key copied *twice*, for example if the device EUI is **0004A30B001B9954** then the **network key** you have to insert will be **0004A30B001B99540004A30B001B9954**.
