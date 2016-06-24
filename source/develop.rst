@@ -173,7 +173,9 @@ Now if you have to set correctly the DEVADDR see the paragraph **Update firmware
 
 .. note::
 
-    with the sources you can build the **DEVADDR** mode or the **RESET** mode using the define **REGISTER_MODULE**
+    with the sources you can build the **DEVADDR** mode or the **RESET** mode using the define **REGISTER_MODULE**. You can generate the bin file to copy in the mass storage simpy using the Lora.bin
+
+    .. image:: _static/lorabin.jpg
 
 Processor Expert
 ****************
