@@ -119,6 +119,62 @@ Always on the KDS click on **Run->Debug Confiuration->GDB Segger J-Link Debug**.
 
 Clicking on **Debug** button the debug will start entering on the first line code of the **main()** function. During the debug session the sleeping mode doesn't work.
 
+Reset Factory
+*************
+
+You can reset the RN module using a special firmware. Follow the next steps:
+
+1. Download the file `fw_reset.bin <http://www.rsr-solutions.net/doc/BAEVTSS002_BAEVTSS003/fw_reset.bin>`_
+
+2. Connect the board from your PC to the board via micro-USB cable. Open the MBED mass storage.
+
+.. image:: _static/mbed_open.jpg
+
+3. Copy the file `fw_reset.bin <http://www.rsr-solutions.net/doc/BAEVTSS002_BAEVTSS003/fw_reset.bin>`_ into the MBED mass storage
+
+4. The Green led on the board will flash while the file is programmed into the device flash memory.
+
+5. Now we have to connect a terminal to the Serial Com. First step, find which number is, going to “Device Manager” and finding the node called “Ports (COM and LPT)”. In this example the number port is 170.
+
+.. image:: _static/device_manager.jpg
+
+6. Open a terminal like **putty**, you can find it `here <https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe>`_. Launch it and set the properties signed in red in the figures:
+
+.. image:: _static/putty_session.jpg
+
+.. image:: _static/putty_serial.jpg
+
+7. Press the **Open** button. Now reset the board pressing **S3** button and after keep the **S2** button pressed for 5 seconds. 
+
+.. image:: _static/board_s2_s3.jpg
+
+8. On the putty console you will see the starting boot text:
+
+::
+
+    BAEVTSS002 firmware version 1.3 - RESET
+    RN2483 1.0.1 Dec 15 2015 09:38:06
+
+9. Keeping the **S2** button pressed you will see after some seconds the text "Please release the button S2". Now releasing the button the data will be resetted.
+
+::
+
+    Starting Factory Reset, please don't turnoff the board
+    sys factoryRESET
+    ...
+
+The procedure will finish with:
+
+::
+
+    Procedure ended successfully
+
+Now if you have to set correctly the DEVADDR see the paragraph **Update firmware** in :ref:`quick13`
+
+.. note::
+
+    with the sources you can build the **DEVADDR** mode or the **RESET** mode using the define **REGISTER_MODULE**
+
 Processor Expert
 ****************
 

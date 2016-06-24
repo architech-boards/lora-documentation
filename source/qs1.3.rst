@@ -5,7 +5,29 @@
 Quick start guide with firmware 1.3 or major
 --------------------------------------------
 
-If you don't have a firmware 1.3 or major please go to develompent :ref:`develop`.
+This guide permits to send messages over the Lora network.
+
+Update firmware
+***************
+
+Update your board with the lastest firmware avaiable:
+
+1. Download the file `fw_devaddr.bin <http://www.rsr-solutions.net/doc/BAEVTSS002_BAEVTSS003/fw_devaddr.bin>`_
+
+2. Connect the board, run the MBED serial driver you can download from `mbed site <https://developer.mbed.org/handbook/Windows-serial-configuration>`_
+
+.. image:: _static/download_mbed_driver.jpg
+
+3. When the driver are installed, a MBED mass storage device, a Serial line and a HID device are present. Open the MBED mass storage
+
+.. image:: _static/mbed_open.jpg
+
+4. Copy the file `fw_devaddr.bin <http://www.rsr-solutions.net/doc/BAEVTSS002_BAEVTSS003/fw_devaddr.bin>`_ into the MBED mass storage
+
+5. The Green led on the board will flash while the file is programmed into the device flash memory
+
+Register Module
+***************
 
 In order to see working the Sensor Node Lora you have to register the device on the `activity website <http://actility.thingpark.com/portal/web>`_ clicking on **Create an account**.
 After the registration login and you will access the main page.
@@ -46,7 +68,12 @@ After the registration, you can close the window device manager and on the main 
 
 .. image:: _static/actility_logger.jpg
 
-Here you will see all the messages sent by your device. Now take your board:
+Here you will see all the messages sent by your device. 
+
+Use your board
+**************
+
+Now take your board:
 
 .. image:: _static/board_bare.jpg
 
@@ -54,7 +81,7 @@ The board doesn't have the correct **device address** in order to send correctly
 
 1. Insert antenna and Micro-USB from the windows PC to the board and put the board on the table.
 
-2. Download and install the drivers for windows from mbed website,
+2. Download and install the drivers for windows from mbed website if you didn't it until now,
 
 .. image:: _static/download_mbed_driver.jpg
 
@@ -62,31 +89,40 @@ The board doesn't have the correct **device address** in order to send correctly
 
 .. image:: _static/board_switch.jpg
 
-5. If the MBED Windows serial port driver is installed correctly Windows will recognize the board as a memory storage called MBED and as a Serial Com Port.
+4. If the MBED Windows serial port driver is installed correctly Windows will recognize the board as a memory storage called MBED and as a Serial Com Port.
 
 .. image:: _static/storage_mbed.jpg
 
-6. Now we have to connect a terminal to the Serial Com. First step, find which number is, going to “Device Manager” and finding the node called “Ports (COM and LPT)”. In this example the number port is 170.
+5. Now we have to connect a terminal to the Serial Com. First step, find which number is, going to “Device Manager” and finding the node called “Ports (COM and LPT)”. In this example the number port is 170.
 
 .. image:: _static/device_manager.jpg
 
-4. Open a terminal like **putty**, you can find it `here <https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe>`_. Launch it and set the properties signed in red in the figures:
+6. Open a terminal like **putty**, you can find it `here <https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe>`_. Launch it and set the properties signed in red in the figures:
 
 .. image:: _static/putty_session.jpg
 
 .. image:: _static/putty_serial.jpg
 
-5. Press the **Open** button. Now reset the board pressing **S3** button and after keep the **S2** button pressed for 5 seconds. 
+7. Press the **Open** button. Now reset the board pressing **S3** button and after keep the **S2** button pressed for 5 seconds. 
 
 .. image:: _static/board_s2_s3.jpg
 
-6. On the putty console you will see the starting boot text:
+8. On the putty console you will see the starting boot text:
 
-.. image:: _static/console_login.jpg
+::
 
-7. Keeping the **S2** button pressed you will see after some seconds the text "**devaddr programming mode actived**". Now you can insert the 8 hexs **networkID** provided by your operator. After the last character inserted this value will be memorized and the text "**devaddr changed successfully**" will appear.
+    BAEVTSS002 firmware version 1.3 - DEVADDR
+    RN2483 1.0.1 Dec 15 2015 09:38:06
 
-.. image:: _static/console_devaddr.jpg
+9. Keeping the **S2** button pressed you will see after some seconds the text "Please release the button S2". Now you can insert the 8 hexs **networkID** provided by your operator. After the last character inserted this value will be memorized and the text "**devaddr changed successfully**" will appear.
+
+::
+
+    devaddr programming mode acrived, insert 8 hexs or press Enter to exit
+    DEVADDR $> 12345678
+    Changing DEVADDR please wait...devaddr changed successfully
+
+**note:** If you press Enter you can skip the procedure. 1234567 is just for example, please contact your Operator in order to know which networkID you have to use. Without the correct networkID you won't send messages with the board.
 
 Now the device is in sleeping mode, in 2 minutes it will wake up and it is going to send a message. For skipping the sleeping phase, press **S2** button.
 
