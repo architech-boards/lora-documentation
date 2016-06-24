@@ -111,7 +111,7 @@ The board doesn't have the correct **device address** in order to send correctly
 
 ::
 
-    BAEVTSS002 firmware version 1.3 - DEVADDR
+    BAEVTSS002 firmware version 1.3 - DEVADDR mode
     RN2483 1.0.1 Dec 15 2015 09:38:06
 
 9. Keeping the **S2** button pressed you will see after some seconds the text "Please release the button S2". Now you can insert the 8 hexs **networkID** provided by your operator. After the last character inserted this value will be memorized and the text "**devaddr changed successfully**" will appear.

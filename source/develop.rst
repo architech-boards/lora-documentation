@@ -152,7 +152,7 @@ You can reset the RN module using a special firmware. Follow the next steps:
 
 ::
 
-    BAEVTSS002 firmware version 1.3 - RESET
+    BAEVTSS002 firmware version 1.3 - RESET mode
     RN2483 1.0.1 Dec 15 2015 09:38:06
 
 9. Keeping the **S2** button pressed you will see after some seconds the text "Please release the button S2". Now releasing the button the data will be resetted.
