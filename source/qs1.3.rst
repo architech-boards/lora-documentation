@@ -12,7 +12,7 @@ Update firmware
 
 Update your board with the lastest firmware avaiable:
 
-1. Download the file `fw_devaddr.bin <http://www.rsr-solutions.net/doc/BAEVTSS002_BAEVTSS003/fw_devaddr.bin>`_
+1. Download the file `Lora_v13_devaddr.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/Lora_v13_devaddr.bin.zip>`_ and unzip it.
 
 2. Connect the board, run the MBED serial driver you can download from `mbed site <https://developer.mbed.org/handbook/Windows-serial-configuration>`_
 
@@ -22,7 +22,7 @@ Update your board with the lastest firmware avaiable:
 
 .. image:: _static/mbed_open.jpg
 
-4. Copy the file `fw_devaddr.bin <http://www.rsr-solutions.net/doc/BAEVTSS002_BAEVTSS003/fw_devaddr.bin>`_ into the MBED mass storage
+4. Copy the file **fw_devaddr.bin** into the MBED mass storage
 
 5. The Green led on the board will flash while the file is programmed into the device flash memory
 

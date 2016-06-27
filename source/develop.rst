@@ -124,13 +124,13 @@ Reset Factory
 
 You can reset the RN module using a special firmware. Follow the next steps:
 
-1. Download the file `fw_reset.bin <http://www.rsr-solutions.net/doc/BAEVTSS002_BAEVTSS003/fw_reset.bin>`_
+1. Download the file `Lora_v13_reset.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/Lora_v13_reset.bin.zip>`_ and unzip it
 
 2. Connect the board from your PC to the board via micro-USB cable. Open the MBED mass storage.
 
 .. image:: _static/mbed_open.jpg
 
-3. Copy the file `fw_reset.bin <http://www.rsr-solutions.net/doc/BAEVTSS002_BAEVTSS003/fw_reset.bin>`_ into the MBED mass storage
+3. Copy the file Lora_v13_reset.bin into the MBED mass storage
 
 4. The Green led on the board will flash while the file is programmed into the device flash memory.
 
