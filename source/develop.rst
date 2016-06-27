@@ -71,7 +71,7 @@ Now you are ready to import the project in your KDS.
 Import Project
 **************
 
-Go to **File->Import** and select **Existing Projects into Workspace**.
+Download the project `1083_SW_BAEVTSS002_REL3.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/1083_SW_BAEVTSS002_REL3.zip>`_. Then go to **File->Import** and select **Existing Projects into Workspace**.
 
 .. image:: _static/kds_archive.jpg
 
