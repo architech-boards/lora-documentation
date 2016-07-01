@@ -12,7 +12,7 @@ Update firmware
 
 Update your board with the lastest firmware avaiable:
 
-1. Download the file `Lora_v13_devaddr.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/Lora_v13_devaddr.bin.zip>`_ and unzip it.
+1. Download the file `Lora_v13_devaddr.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v13_devaddr.bin.zip>`_ and unzip it.
 
 2. Connect the board, run the MBED serial driver you can download from `mbed site <https://developer.mbed.org/handbook/Windows-serial-configuration>`_
 
