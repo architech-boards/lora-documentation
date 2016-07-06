@@ -5,7 +5,7 @@ Welcome to Sensor Node Lora documentation!
 
 
 :Version: 1.10D
-:Copyright: (C)2016 Avnet Memec Silica company
+:Copyright: (C)2016 Avnet Silica company
 :Date: 6 Jul 2016
 :Reference name: BAEVTSS002
 
