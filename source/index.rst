@@ -4,9 +4,9 @@ Welcome to Sensor Node Lora documentation!
 ==========================================
 
 
-:Version: 1.10C
+:Version: 1.10D
 :Copyright: (C)2016 Avnet Memec Silica company
-:Date: 1 Jul 2016
+:Date: 6 Jul 2016
 :Reference name: BAEVTSS002
 
 Microchip’s Long Range Low Power End Node solution
