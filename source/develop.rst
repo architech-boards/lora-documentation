@@ -71,7 +71,7 @@ Now you are ready to import the project in your KDS.
 Import Project
 **************
 
-Download the project `1083_SW_BAEVTSS002_REL3.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/1083_SW_BAEVTSS002_REL3.zip>`_. Then go to **File->Import** and select **Existing Projects into Workspace**.
+Download the project `1083_SW_BAEVTSS002_REL4.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/1083_SW_BAEVTSS002_REL4.zip>`_. Then go to **File->Import** and select **Existing Projects into Workspace**.
 
 .. image:: _static/kds_archive.jpg
 
@@ -122,15 +122,15 @@ Clicking on **Debug** button the debug will start entering on the first line cod
 Reset Factory
 *************
 
-You can reset the RN module using a special firmware. Follow the next steps:
+With the release 1.4 you can reset the RN module throught the menu. Follow the next steps:
 
-1. Download the file `Lora_v13_reset.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v13_reset.bin.zip>`_ and unzip it
+1. Download the file `Lora_v14.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v14.bin.zip>`_ and unzip it
 
 2. Connect the board from your PC to the board via micro-USB cable. Open the MBED mass storage.
 
 .. image:: _static/mbed_open.jpg
 
-3. Copy the file Lora_v13_reset.bin into the MBED mass storage
+3. Copy the file Lora_v14.bin into the MBED mass storage
 
 4. The Green led on the board will flash while the file is programmed into the device flash memory.
 
@@ -144,7 +144,7 @@ You can reset the RN module using a special firmware. Follow the next steps:
 
 .. image:: _static/putty_serial.jpg
 
-7. Press the **Open** button. Now reset the board pressing **S3** button and after keep the **S2** button pressed for 5 seconds. 
+7. Press the **Open** button. Now reset the board pressing **S3**.
 
 .. image:: _static/board_s2_s3.jpg
 
@@ -152,28 +152,38 @@ You can reset the RN module using a special firmware. Follow the next steps:
 
 ::
 
-    BAEVTSS002 firmware version 1.3 - RESET mode
+    BAEVTSS002 firmware version 1.4
     RN2483 1.0.1 Dec 15 2015 09:38:06
 
-9. Keeping the **S2** button pressed you will see after some seconds the text "Please release the button S2". Now releasing the button the data will be resetted.
+9. Keeping the **S2** button pressed you will see after some seconds the text **Please release the button S2**. Will be displayed a menu like this one:
 
 ::
 
-    Starting Factory Reset, please don't turnoff the board
-    sys factoryRESET
-    ...
+  *** MENU CONFIG RN2483 ***
+  Enter 0 to print this menu
+  Enter 1 to see values in DEVEUI and DEVADDR registers
+  Enter 2 to modify DEVEUI
+  Enter 3 to modify DEVADDR
+  Enter 4 to modify APPSKEY
+  Enter 5 to modify NWKSKEY
+  Enter 6 to save changes
+  Enter 7 to Microchip default reset
+  Enter 8 to Avnet default reset
+  Enter 9 to exit
 
-The procedure will finish with:
+10. From the menu press the key **8** referred to *Enter 8 to Avnet default reset*. During the reset will be showed:
 
 ::
 
-    Procedure ended successfully
+    Starting Avnet default reset, please don't turnoff the board
 
-Now if you have to set correctly the DEVADDR see the paragraph **Update firmware** in :ref:`quick13`
+11. Wait until will be showed the message **success**.
+
+12. Now if you have to set correctly the DEVADDR register, see the paragraph **Update firmware** in :ref:`quick14`
 
 .. note::
 
-    with the sources you can build the **DEVADDR** mode or the **RESET** mode using the define **REGISTER_MODULE**. You can generate the bin file to copy in the mass storage simpy using the Lora.bin
+    with the sources you can build the firmware 1.4. You can generate the bin file to copy in the mass storage simpy using the Lora.bin
 
     .. image:: _static/lorabin.jpg
 

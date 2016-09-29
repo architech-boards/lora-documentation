@@ -1,9 +1,9 @@
-.. index:: qs1.3
+.. index:: qs1.4
 
-.. _quick13:
+.. _quick14:
 
-Quick start guide with firmware 1.3
------------------------------------
+Quick start guide with firmware 1.4 or major
+--------------------------------------------
 
 This guide permits to send messages over the Lora network.
 
@@ -12,7 +12,7 @@ Update firmware
 
 Update your board with the lastest firmware avaiable:
 
-1. Download the file `Lora_v13_devaddr.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v13_devaddr.bin.zip>`_ and unzip it.
+1. Download the file `Lora_v14.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v14.bin.zip>`_ and unzip it.
 
 2. Connect the board, run the MBED serial driver you can download from `mbed site <https://developer.mbed.org/handbook/Windows-serial-configuration>`_
 
@@ -111,20 +111,87 @@ The board doesn't have the correct **device address** in order to send correctly
 
 ::
 
-    BAEVTSS002 firmware version 1.3 - DEVADDR mode
+    BAEVTSS002 firmware version 1.4
     RN2483 1.0.1 Dec 15 2015 09:38:06
 
-9. Keeping the **S2** button pressed you will see after some seconds the text "Please release the button S2". Now you can insert the 8 hexs **networkID** provided by your operator. After the last character inserted this value will be memorized and the text "**devaddr changed successfully**" will appear.
+9. Keeping the **S2** button pressed you will see after some seconds the text **Please release the button S2**. Will be displayed a menu like this one:
 
 ::
 
-    devaddr programming mode acrived, insert 8 hexs or press Enter to exit
-    DEVADDR $> 12345678
-    Changing DEVADDR please wait...devaddr changed successfully
+  *** MENU CONFIG RN2483 ***
+  Enter 0 to print this menu
+  Enter 1 to see values in DEVEUI and DEVADDR registers
+  Enter 2 to modify DEVEUI
+  Enter 3 to modify DEVADDR
+  Enter 4 to modify APPSKEY
+  Enter 5 to modify NWKSKEY
+  Enter 6 to save changes
+  Enter 7 to Microchip default reset
+  Enter 8 to Avnet default reset
+  Enter 9 to exit
 
-**note:** If you press Enter you can skip the procedure. 1234567 is just for example, please contact your Operator in order to know which networkID you have to use. Without the correct networkID you won't send messages with the board.
+From this menu you will be able to change the registers **DEVEUI**, **DEVADDR**, **APPSKEY** and **NWKSKEY**. furthermore it is possible reset the RN2483 with factory reset by Microchip or by Avnet. 
 
-Now the device is in sleeping mode, in 2 minutes it will wake up and it is going to send a message. For skipping the sleeping phase, press **S2** button.
+.. warning::
+
+  The BAEVTSS002 is setted by default with **Avnet reset**. 
+
+10. In this case, we want change the networkID so you have to press the key **2** to be able to change the **DEVEUI** register, it will be showed:
+
+::
+
+  Changing deveui register, current value: 001B9954
+  Enter new deveui value, 8 hex numbers lenght (press ENTER to abort):
+  >>
+
+As you can see in the first line it is displayed the current value in the register and how many numbers you have to insert in order to change the register.
+
+.. note::
+
+  The current value of the register it is displayed only for **DEVEUI** and **DEVADDR** registers. **APPSKEY** and **NWKSKEY** register are write-only so their current value won't be showed.
+
+11. Insert **8** hexs numbers, for example **12345678**. After the last key will be pressed automatically the value of register will change.
+
+::
+
+  Changing deveui register, current value: 001B9954
+  Enter new deveui value, 8 hex numbers lenght (press ENTER to abort):
+  >> 12345678
+
+.. note:: 
+
+  If you press Enter before to insert all the keys the procedure will abort. **12345678** is just for example, please contact your Operator in order to know which networkID you have to use. Without the correct networkID you won't be able to send messages.
+
+12. If the procedure will have success will appear the message **value changed**:
+
+::
+
+  Changing deveui register, current value: **001B9954**
+  Enter new deveui value, 8 hex numbers lenght (press ENTER to abort):
+  >> 12345678
+  **value changed**
+
+13. Now the **DEVEUI** register is changed but if the **RN2843** will be turned off the modify will be lost. In order to keep the modify you have to save it. To do it, from the menu press the key **6** referred to *Enter 6 to save changes*. During the saving will be showed:
+
+::
+
+  Saving modifies, please don't turn off the device...
+  please wait...
+
+14. The saving will terminate when will appear the message **success**:
+
+::
+
+  Saving modifies, please don't turn off the device...
+  please wait...success
+
+.. note::
+
+  If you have to change other values use the appropiate keys. If you want only see the value of the readable register press the key **1**
+
+15. Now to start the demo exit from the menu pressing the key **9**. The device will enter automatically in **sleep mode**.
+
+16. Every 2 minutes it will wake up for a short time in order to send a message. It is possible skipping the sleeping phase pressing the **S2** button. When the board is sending a message a blue led will be turned on.
 
 .. image:: _static/board_s2.jpg
 
