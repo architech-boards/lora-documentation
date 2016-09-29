@@ -169,7 +169,7 @@ As you can see in the first line it is displayed the current value in the regist
   Changing deveui register, current value: **001B9954**
   Enter new deveui value, 8 hex numbers lenght (press ENTER to abort):
   >> 12345678
-  **value changed**
+  value changed
 
 13. Now the **DEVEUI** register is changed but if the **RN2843** will be turned off the modify will be lost. In order to keep the modify you have to save it. To do it, from the menu press the key **6** referred to *Enter 6 to save changes*. During the saving will be showed:
 
