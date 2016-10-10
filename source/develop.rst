@@ -71,7 +71,7 @@ Now you are ready to import the project in your KDS.
 Import Project
 **************
 
-Download the project `1083_SW_BAEVTSS002_REL4.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/1083_SW_BAEVTSS002_REL4.zip>`_. Then go to **File->Import** and select **Existing Projects into Workspace**.
+Download the project `1083_SW_BAEVTSS002_REL5.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/1083_SW_BAEVTSS002_REL5.zip>`_. Then go to **File->Import** and select **Existing Projects into Workspace**.
 
 .. image:: _static/kds_archive.jpg
 
@@ -122,9 +122,9 @@ Clicking on **Debug** button the debug will start entering on the first line cod
 Reset Factory
 *************
 
-With the release 1.4 you can reset the RN module throught the menu. Follow the next steps:
+From the release 1.4 you can reset the RN module throught the menu. Follow the next steps:
 
-1. Download the file `Lora_v14.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v14.bin.zip>`_ and unzip it
+1. Download the file `Lora_v15.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v15.bin.zip>`_ and unzip it
 
 2. Connect the board from your PC to the board via micro-USB cable. Open the MBED mass storage.
 
@@ -152,7 +152,7 @@ With the release 1.4 you can reset the RN module throught the menu. Follow the n
 
 ::
 
-    BAEVTSS002 firmware version 1.4
+    BAEVTSS002 firmware version 1.5
     RN2483 1.0.1 Dec 15 2015 09:38:06
 
 9. Keeping the **S2** button pressed you will see after some seconds the text **Please release the button S2**. Will be displayed a menu like this one:
@@ -179,11 +179,11 @@ With the release 1.4 you can reset the RN module throught the menu. Follow the n
 
 11. Wait until will be showed the message **success**.
 
-12. Now if you have to set correctly the DEVADDR register, see the paragraph **Update firmware** in :ref:`quick14`
+12. Now if you have to set correctly the DEVADDR register, see the paragraph **Update firmware** in :ref:`quick15`
 
 .. note::
 
-    with the sources you can build the firmware 1.4. You can generate the bin file to copy in the mass storage simpy using the Lora.bin
+    with the sources you can build the firmware 1.5. You can generate the bin file to copy in the mass storage simpy using the Lora.bin
 
     .. image:: _static/lorabin.jpg
 
