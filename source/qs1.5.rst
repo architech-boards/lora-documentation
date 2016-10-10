@@ -14,17 +14,17 @@ Update your board with the lastest firmware avaiable:
 
 1. Download the file `Lora_v15.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v15.bin.zip>`_ and unzip it.
 
-2. Connect the board, run the MBED serial driver you can download from `mbed site <https://developer.mbed.org/handbook/Windows-serial-configuration>`_
+2. Connect the board, Go to the `mbed site <https://developer.mbed.org/handbook/Windows-serial-configuration>`_
 
-.. image:: _static/download_mbed_driver.jpg
+3. Download the lastest mbed serial port driver, it is named as **mbedWinSerial**.
 
-3. When the driver are installed, a MBED mass storage device, a Serial line and a HID device are present. Open the MBED mass storage
+4. When the driver is installed, a MBED mass storage device, a Serial line and a HID device are present. Open the MBED mass storage
 
 .. image:: _static/mbed_open.jpg
 
-4. Copy the file **fw_devaddr.bin** into the MBED mass storage
+5. Copy the file **Lora_v15.bin** into the MBED mass storage
 
-5. The Green led on the board will flash while the file is programmed into the device flash memory
+6. The Green led on the board will flash while the file is programmed into the device flash memory
 
 Register Module
 ***************
@@ -81,40 +81,42 @@ The board doesn't have the correct **device address** in order to send correctly
 
 1. Insert antenna and Micro-USB from the windows PC to the board and put the board on the table.
 
-2. Download and install the drivers for windows from mbed website if you didn't it until now,
+2. If you did not installed the mbed serial driver then go to `mbed website <https://developer.mbed.org/handbook/Windows-serial-configuration>`_ otherwise go to the step **5**
 
-.. image:: _static/download_mbed_driver.jpg
+3. Download the lastest mbed serial port driver, it is named as **mbedWinSerial**.
 
-3. Now switch on the Lora Sensor Node.
+4. Install the driver.
+
+5. Now switch on the Lora Sensor Node.
 
 .. image:: _static/board_switch.jpg
 
-4. If the MBED Windows serial port driver is installed correctly Windows will recognize the board as a memory storage called MBED and as a Serial Com Port.
+6. If the MBED Windows serial port driver is installed correctly Windows will recognize the board as a memory storage called MBED and as a Serial Com Port.
 
 .. image:: _static/storage_mbed.jpg
 
-5. Now we have to connect a terminal to the Serial Com. First step, find which number is, going to “Device Manager” and finding the node called “Ports (COM and LPT)”. In this example the number port is 170.
+7. Now we have to connect a terminal to the Serial Com. First step, find which number is, going to “Device Manager” and finding the node called “Ports (COM and LPT)”. In this example the number port is 170.
 
 .. image:: _static/device_manager.jpg
 
-6. Open a terminal like **putty**, you can find it `here <https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe>`_. Launch it and set the properties signed in red in the figures:
+8. Open a terminal like **putty**, you can find it `here <https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe>`_. Launch it and set the properties signed in red in the figures:
 
 .. image:: _static/putty_session.jpg
 
 .. image:: _static/putty_serial.jpg
 
-7. Press the **Open** button. Now reset the board pressing **S3** button and after keep the **S2** button pressed for 5 seconds. 
+9. Press the **Open** button. Now reset the board pressing **S3** button and after keep the **S2** button pressed for 5 seconds. 
 
 .. image:: _static/board_s2_s3.jpg
 
-8. On the putty console you will see the starting boot text:
+10. On the putty console you will see the starting boot text:
 
 ::
 
     BAEVTSS002 firmware version 1.5
     RN2483 1.0.1 Dec 15 2015 09:38:06
 
-9. Keeping the **S2** button pressed you will see after some seconds the text **Please release the button S2**. Will be displayed a menu like this one:
+11. Keeping the **S2** button pressed you will see after some seconds the text **Please release the button S2**. Will be displayed a menu like this one:
 
 ::
 
@@ -136,7 +138,7 @@ From this menu you will be able to change the registers **DEVEUI**, **DEVADDR**,
 
   The BAEVTSS002 is setted by default with **Avnet reset**. 
 
-10. In this case, we want change the networkID so you have to press the key **2** to be able to change the **DEVEUI** register, it will be showed:
+12. In this case, we want change the networkID so you have to press the key **2** to be able to change the **DEVEUI** register, it will be showed:
 
 ::
 
@@ -150,7 +152,7 @@ As you can see in the first line it is displayed the current value in the regist
 
   The current value of the register it is displayed only for **DEVEUI** and **DEVADDR** registers. **APPSKEY** and **NWKSKEY** register are write-only so their current value won't be showed.
 
-11. Insert **8** hexs numbers, for example **12345678**. After the last key will be pressed automatically the value of register will change.
+13. Insert **8** hexs numbers, for example **12345678**. After the last key will be pressed automatically the value of register will change.
 
 ::
 
@@ -162,7 +164,7 @@ As you can see in the first line it is displayed the current value in the regist
 
   If you press Enter before to insert all the keys the procedure will abort. **12345678** is just for example, please contact your Operator in order to know which networkID you have to use. Without the correct networkID you won't be able to send messages.
 
-12. If the procedure will have success will appear the message **value changed**:
+14. If the procedure will have success will appear the message **value changed**:
 
 ::
 
@@ -171,14 +173,14 @@ As you can see in the first line it is displayed the current value in the regist
   >> 12345678
   value changed
 
-13. Now the **DEVEUI** register is changed but if the **RN2843** will be turned off the modify will be lost. In order to keep the modify you have to save it. To do it, from the menu press the key **6** referred to *Enter 6 to save changes*. During the saving will be showed:
+15. Now the **DEVEUI** register is changed but if the **RN2843** will be turned off the modify will be lost. In order to keep the modify you have to save it. To do it, from the menu press the key **6** referred to *Enter 6 to save changes*. During the saving will be showed:
 
 ::
 
   Saving modifies, please don't turn off the device...
   please wait...
 
-14. The saving will terminate when will appear the message **success**:
+16. The saving will terminate when will appear the message **success**:
 
 ::
 
@@ -189,9 +191,9 @@ As you can see in the first line it is displayed the current value in the regist
 
   If you have to change other values use the appropiate keys. If you want only see the value of the readable register press the key **1**
 
-15. Now to start the demo exit from the menu pressing the key **9**. The device will enter automatically in **sleep mode**.
+17. Now to start the demo exit from the menu pressing the key **9**. The device will enter automatically in **sleep mode**.
 
-16. Every 2 minutes it will wake up for a short time in order to send a message. It is possible skipping the sleeping phase pressing the **S2** button. When the board is sending a message a blue led will be turned on.
+18. Every 2 minutes it will wake up for a short time in order to send a message. It is possible skipping the sleeping phase pressing the **S2** button. When the board is sending a message a blue led will be turned on.
 
 .. image:: _static/board_s2.jpg
 

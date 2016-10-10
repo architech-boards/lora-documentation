@@ -41,7 +41,7 @@ After saving this setup is not required repeat the opeation of setup. In order t
 
 - **mac join abp**: used to join the Lora network
 
-- **mac tx cnf 4 18AABBCC**: used to send the frame *"18AABBCC"* on the port 4
+- **mac tx cnf 4 18AABBCC48DD0000**: used to send the frame *"18AABBCC48DD0000"* on the port 4
 
 Datasheet and more
 ******************

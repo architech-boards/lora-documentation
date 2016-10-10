@@ -23,78 +23,99 @@ Hardware required:
 Install & Update Kinetis Design Studio
 **************************************
 
-First up, register at the NXP website `registration form <https://www.nxp.com/webapp/crcl.ccr_register.framework?ACTION_TYPE=registerpage>`_ then you can download the IDE from `this page <http://www.nxp.com/products/software-and-tools/run-time-software/kinetis-software-and-tools/ides-for-kinetis-mcus/kinetis-design-studio-integrated-development-environment-ide:KDS_IDE>`_. Press on **Download** button.
+1. First up, register at the NXP website `registration form <https://www.nxp.com/webapp/crcl.ccr_register.framework?ACTION_TYPE=registerpage>`_ 
+
+2. Download the IDE from `this page <http://www.nxp.com/products/software-and-tools/run-time-software/kinetis-software-and-tools/ides-for-kinetis-mcus/kinetis-design-studio-integrated-development-environment-ide:KDS_IDE>`_. Clicking on **Download** button.
 
 .. image:: _static/download_kinetis_0.jpg
 
-We used Kinetis Design Studio **3.2.0**, press on **Downloads for Kinetis Design Studio for Microsoft Windows**. 
+.. note::
+
+  We used Kinetis Design Studio **3.2.0**
+
+3. Click on **Downloads for Kinetis Design Studio for Microsoft Windows**. 
 
 .. image:: _static/download_kinetis_1.jpg
 
-Agree the terms and download the file **Installer: Kinetis Design Studio 3.2.0 Installer for Windows**.
+4. Agree the terms and download the file **Installer: Kinetis Design Studio 3.2.0 Installer for Windows**.
 
 .. image:: _static/download_kinetis_3.jpg
 
-Next, run the downloaded file **kinetis-design-studio_3.2.0.exe** following all the default options.
+5. Next, launch the downloaded file **kinetis-design-studio_3.2.0.exe** following all the default options.
 
-Launch KDS and select a directory for the workspace. Our project will be imported in this folder. In this guide we used this path:
+6. Launch the KDS and select a directory for the workspace. Our project will be imported in this folder. In this guide we used this path:
 
 .. image:: _static/kds_workspace.jpg
 
-At this point, if you want to modify the project using **processor expert** it is required to install also the package **KSDK 1.3.0** in order to be compatible with the project. You can find this package on `KINETIS-SDK page <http://www.nxp.com/products/software-and-tools/run-time-software/kinetis-software-and-tools/development-platforms-with-mbed/software-development-kit-for-kinetis-mcus:KINETIS-SDK?code=KINETIS-SDK&nodeId=0152109D3F1E8C1EF7&fpsp=1&tab=Design_Tools_Tab>`_. Select Download button from **Kinetis SDK**.
+7. At this point, if you want to modify the project using **processor expert** it is required to install also the package **KSDK 1.3.0** in order to be compatible with the project. You can find this package on `KINETIS-SDK page <http://www.nxp.com/products/software-and-tools/run-time-software/kinetis-software-and-tools/development-platforms-with-mbed/software-development-kit-for-kinetis-mcus:KINETIS-SDK?code=KINETIS-SDK&nodeId=0152109D3F1E8C1EF7&fpsp=1&tab=Design_Tools_Tab>`_. Select Download button from **Kinetis SDK**.
 
 .. image:: _static/download_kinetis_KSDK_1.jpg
 
-Select **KSDK v1.3.0 Mainline releases**
+8. Select **KSDK v1.3.0 Mainline releases**
 
 .. image:: _static/download_kinetis_KSDK_2.jpg
 
-Agree the terms and then download **Kinetis SDK 1.3.0 Mainline - Windows.exe**
+9. Agree the terms and then download **Kinetis SDK 1.3.0 Mainline - Windows.exe**
 
 .. image:: _static/download_kinetis_KSDK_3.jpg
 
-Install it following all the default options, it will be installed into **C:\\Freescale\\KSDK_1.3.0**
+10. Install it following all the default options, it will be installed into **C:\\Freescale\\KSDK_1.3.0**
 
-Follow these steps:
+11. Now launch KDS 3.2.0
 
-1. Run KDS 3.2.0
-2. Select Help -> Install New Software
-3. Click on **Add...** button
-4. Then click on **Archive** button
-5. Now select from **C:\\Freescale\\KSDK_1.3.0\\tools\\eclipse_update** the file **KSDK_1.3.0_Eclipse_Update**
-6. Select the package **KSDK 1.3.0 Eclipse Update**
-7. Continue with the wizard. Accept the license agreement during the installation process.
-8. Restart KDS
+12. Select **Help -> Install New Software**
+
+13. Click on **Add...** button
+
+14. Then click on **Archive** button
+
+15. Now select from **C:\\Freescale\\KSDK_1.3.0\\tools\\eclipse_update** the file **KSDK_1.3.0_Eclipse_Update**
+
+16. Select the package **KSDK 1.3.0 Eclipse Update**
+
+17. Continue with the wizard. Accept the license agreement during the installation process.
+
+18. Restart KDS
 
 Now you are ready to import the project in your KDS.
 
 Import Project
 **************
 
-Download the project `1083_SW_BAEVTSS002_REL5.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/1083_SW_BAEVTSS002_REL5.zip>`_. Then go to **File->Import** and select **Existing Projects into Workspace**.
+1. Download the project `1083_SW_BAEVTSS002_REL5.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/1083_SW_BAEVTSS002_REL5.zip>`_. 
+
+2. Then go to **File->Import** and select **Existing Projects into Workspace**.
 
 .. image:: _static/kds_archive.jpg
 
-Browse to the zip file containing the project and select the project.
+3. Browse to the zip file containing the project and select the project.
 
 .. image:: _static/import_lora.jpg
 
-Press on **Finish**. Now you are ready to build and debug it. There are two ways to debug the board, the easiest is debug it via USB.
+4. Press on **Finish**. Now you are ready to build and debug it. There are two ways to debug the board, the easiest is debug it via USB.
 
 Build & Debug via USB
 *********************
 
-With the Mini-USB connector you are able to use **OpenOCD** inteface. In order to use it download and install the drivers for windows from `mbed website <https://developer.mbed.org/handbook/Windows-serial-configuration>`_, 
+With the Mini-USB connector you are able to use **OpenOCD** inteface. It is necessary to install the mbed serial port driver.
 
-.. image:: _static/download_mbed_driver.jpg
+1. Go to the `mbed website <https://developer.mbed.org/handbook/Windows-serial-configuration>`_
 
-After the installation, connect the lora-node board to the PC via **CN2** connector and turn on the board switching the **SW1**. Windows will recognize it.
+2. Download the lastest mbed serial port driver, it is named as **mbedWinSerial**.
 
-Go to **Project->Build All**, to compile the entire project. Always on the KDS click on **Run->Debug Confiuration->Lora_Debug_OpenOCD**.
+3. Install the driver.
+
+4. After the installation, connect the lora-node board to the PC via the **CN2** connector 
+
+5. Turn On the board switching the **SW1**. Windows will recognize it.
+
+6. On the KDS go to **Project->Build All**, to compile the entire project. 
+
+7. Then click on **Run->Debug Confiuration->Lora_Debug_OpenOCD**.
 
 .. image:: _static/kds_debug_openocd.jpg
 
-Clicking on **Debug** button the debug will start entering on the first line code of the **main()** function. During the debug session the sleeping mode doesn't work.
+8. Clicking on **Debug** button the debug will start entering on the first line code of the **main()** function. During the debug session the sleeping mode doesn't work.
 
 .. warning::
 
@@ -103,21 +124,21 @@ Clicking on **Debug** button the debug will start entering on the first line cod
 Build & Debug via SWD
 *********************
 
-Go to **Project->Build All**, to compile the entire project. In order to debug it connect the J-Link to the connector **CN4**. 
+1. Go to **Project->Build All**, to compile the entire project. In order to debug it connect the J-Link to the connector **CN4**. 
 
 .. note::
 
     Connector **CN4** is not fitted on the lora-node board. It is a connector **SMD MALE STRIP 2x5 P1.27mm**. You have to fit it in order to debug the board via SWD.
 
-The used debug interface is **SWD**. Then turn on the board switching the **SW1**.
+2. The used debug interface is **SWD**. Then turn on the board switching the **SW1**.
 
 .. image:: _static/board_jlink.jpg
 
-Always on the KDS click on **Run->Debug Confiuration->GDB Segger J-Link Debug**.
+3. Always on the KDS click on **Run->Debug Confiuration->GDB Segger J-Link Debug**.
 
 .. image:: _static/kds_debug.jpg
 
-Clicking on **Debug** button the debug will start entering on the first line code of the **main()** function. During the debug session the sleeping mode doesn't work.
+4. Clicking on **Debug** button the debug will start entering on the first line code of the **main()** function. During the debug session the sleeping mode doesn't work.
 
 Reset Factory
 *************
@@ -130,7 +151,7 @@ From the release 1.4 you can reset the RN module throught the menu. Follow the n
 
 .. image:: _static/mbed_open.jpg
 
-3. Copy the file Lora_v14.bin into the MBED mass storage
+3. Copy the **Lora_v15.bin** file into the MBED mass storage
 
 4. The Green led on the board will flash while the file is programmed into the device flash memory.
 
