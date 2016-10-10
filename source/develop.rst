@@ -8,7 +8,7 @@ Developing guide
 This guide will provide instructions to install the development environment needed to compile and debug the demo firmware of the Sensor Node Lora. The development system is multiplatform, it supports Windows and Linux. This guide is written using Windows.
 The main steps are:
 
-- Install Kinetis Design Studio 3.2.0, upgrade it and install KSDK 1.3.0
+- Install **Kinetis Design Studio 3.2.0**, upgrade it and install **KSDK 1.3.0**
 
 - Import build & debug the source project
 
@@ -29,15 +29,11 @@ Install & Update Kinetis Design Studio
 
 .. image:: _static/download_kinetis_0.jpg
 
-.. note::
-
-  We used Kinetis Design Studio **3.2.0**
-
 3. Click on **Downloads for Kinetis Design Studio for Microsoft Windows**. 
 
 .. image:: _static/download_kinetis_1.jpg
 
-4. Agree the terms and download the file **Installer: Kinetis Design Studio 3.2.0 Installer for Windows**.
+4. Agree the terms and download the file Installer: **Kinetis Design Studio 3.2.0 Installer for Windows**.
 
 .. image:: _static/download_kinetis_3.jpg
 

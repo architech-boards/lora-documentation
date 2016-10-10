@@ -46,7 +46,6 @@ After saving this setup is not required repeat the opeation of setup. In order t
 Datasheet and more
 ******************
 
-Please refer to `architechboards <http://architechboards.org/>`_ website.
+Please refer to `Avnet Silica <http://www.silica.com>`_ website.
 
-.. image:: _static/logo_architech.jpg
 
