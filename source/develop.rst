@@ -101,21 +101,32 @@ With the Mini-USB connector you are able to use **OpenOCD** inteface. It is nece
 
 3. Install the driver.
 
-4. After the installation, connect the lora-node board to the PC via the **CN2** connector 
+4. After the installation, connect the lora-node board to the PC via the **CN2** connector.
 
-5. Turn On the board switching the **SW1**. Windows will recognize it.
+.. image:: _static/board_usb.jpg
 
-6. On the KDS go to **Project->Build All**, to compile the entire project. 
+5. Turn On the board switching the **SW1** as in figure. 
 
-7. Then click on **Run->Debug Confiuration->Lora_Debug_OpenOCD**.
+.. image:: _static/board_usb_on.jpg
+
+6. Windows will recognize it as a MBED mass storage device.
+
+.. image:: _static/mbed_open.jpg
+
+7. On the KDS from the menu click on **Project->Build All**, to compile the entire project. 
+
+8. Then click on **Run->Debug Confiuration->Lora_Debug_OpenOCD**.
 
 .. image:: _static/kds_debug_openocd.jpg
 
-8. Clicking on **Debug** button the debug will start entering on the first line code of the **main()** function. During the debug session the sleeping mode doesn't work.
+9. Clicking on **Debug** button the debug will start entering on the first line code of the **main()** function. 
+
+.. image:: _static/eclipse_debug.jpg
 
 .. warning::
 
-    Due some problem with KDS, sometimes you have to launch the debug twice before the KDS will run the debug correctly.
+    - Due some problem with KDS, sometimes you have to launch the debug twice before the KDS will run the debug correctly.
+    - During the debug session the sleeping mode doesn't work.
 
 Build & Debug via SWD
 *********************
