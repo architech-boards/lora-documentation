@@ -54,12 +54,12 @@ Developement tools
 ******************
 
 Firmware developed using:
-NXP Kinetis Design Studio. For installation and configuration of the project, follow instruction inside :ref:`quick`
+NXP Kinetis Design Studio. For installation and configuration of the project, follow instruction inside :ref:`quick15`
 
 Document references
 *******************
 
-The board reference documentation is available on the `architech-board <http://architechboards.org>`_ website. 
+The board reference documentation is available on the `Avnet Silica <http://www.silica.com>`_ website. 
 
 
 Contents:
@@ -67,9 +67,10 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   qs1
-   qs1.3
    qs1.5
+   qs1.3
+   qs1
+   
    develop
    hw
 

@@ -2,8 +2,8 @@
 
 .. _quick:
 
-Quick start guide
------------------
+Quick start guide for firmware 1.0
+----------------------------------
 
 This guide is valid if you can choose by yourself the devaddr on the registration device of the Actility webpage.
 If you want upgrade the firmware to the newest version then go to :ref:`quick13`.

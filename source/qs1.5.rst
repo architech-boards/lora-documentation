@@ -2,10 +2,10 @@
 
 .. _quick15:
 
-Quick start guide with firmware 1.5 or major
---------------------------------------------
+Quick start guide for firmware 1.4 or major
+-------------------------------------------
 
-This guide permits to send messages over the Lora network.
+This guide permits to send messages over the Lora network. This page is written for Windows users.
 
 Update firmware
 ***************
@@ -14,35 +14,42 @@ Update your board with the lastest firmware avaiable:
 
 1. Download the file `Lora_v15.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v15.bin.zip>`_ and unzip it.
 
-2. Connect the board, Go to the `mbed site <https://developer.mbed.org/handbook/Windows-serial-configuration>`_
+2. Connect the board to the PC via Mini Usb cable.
 
-3. Download the lastest mbed serial port driver, it is named as **mbedWinSerial**.
+.. image:: _static/board_usb.jpg
 
-4. When the driver is installed, a MBED mass storage device, a Serial line and a HID device are present. Open the MBED mass storage
+3. Go to the `mbed site <https://developer.mbed.org/handbook/Windows-serial-configuration>`_.
+
+4. Download the lastest mbed serial port driver, it is named as **mbedWinSerial**.
+
+5. Install the driver.
+
+6. When the driver is installed, a MBED mass storage device and a Serial line and a HID device are finded out. Open the MBED mass storage.
 
 .. image:: _static/mbed_open.jpg
 
-5. Copy the file **Lora_v15.bin** into the MBED mass storage
+7. Copy the file **Lora_v15.bin** into the MBED mass storage.
 
-6. The Green led on the board will flash while the file is programmed into the device flash memory
+8. The Green led on the board will blink while the file is programmed into the device flash memory.
 
 Register Module
 ***************
 
-In order to see working the Sensor Node Lora you have to register the device on the `activity website <http://actility.thingpark.com/portal/web>`_ clicking on **Create an account**.
-After the registration login and you will access the main page.
+1. In order to see working the Sensor Node Lora you have to register the device on the `activity website <http://actility.thingpark.com/portal/web>`_ clicking on **Create an account**. 
+
+2. After the registration login and you will access the main page.
 
 .. image:: _static/actility_main.jpg
 
-First up we have to register your Microchip RN2483 device, to do this, click on **Device Manager** arrow to open a new window.
+3. Register your Microchip RN2483 device, to do this, click on **Device Manager** arrow to open a new window.
 
 .. image:: _static/actility_device_manager.jpg
 
-Click the right mouse button on the **Devices** folder and select **+ Create**.
+4. Click the right mouse button on the **Devices** folder and select **+ Create**.
 
 .. image:: _static/actility_create.jpg
 
-In this form you have to insert the data we have stored in the RN2483. The following fields are mandatory:
+5. In this form you have to insert the data we have stored in the RN2483. The following fields are mandatory:
 
 - **Device EUI**: the 16-hex identification key of the device. It is unique for every device, you can read it on the label of the board as in the image. For example the code can be **0004A30B001B9954**
 
@@ -58,17 +65,17 @@ Optional field but useful:
 
 - **Name**: insert a name just to recognize your device.
 
-Then click on the top right **+ create**.
+6. Click on the top right **+ create**.
 
 .. warning::
 
     If some key is wrong then the device will be unable to send data correctly in the Lora network.
 
-After the registration, you can close the window device manager and on the main page go to **Logger**.
+7. After the registration, you can close the window device manager and on the main page go to **Logger**.
 
 .. image:: _static/actility_logger.jpg
 
-Here you will see all the messages sent by your device. 
+8. In this page you will see all the messages sent by your device. 
 
 Use your board
 **************
@@ -197,16 +204,27 @@ As you can see in the first line it is displayed the current value in the regist
 
 .. image:: _static/board_s2.jpg
 
-After pressing **S2** button you will see the first message sent by your device. Now tilt your board to 90 degrees and wait 30 seconds.
+19. After pressing **S2** button you will see the first message sent by your device. Now tilt your board to 90 degrees and wait 30 seconds.
 
 .. image:: _static/board_tilt.jpg
 
-The board will send another message. Now it's time to see the data sent. Power off the board. And in the logger window, you will have 2 rows, every row is a message received from the server.
-If you click on the **+** node you can see the unencrypted data received **Payload (hex):**. All messages start with the number 18, the other three number couples are the data read from the accelerometer mounted on the board. You will see the data changed when you have tilted the board and sent the second message. The accelerometer data are marked in red.
+20. The board will send another message. 
+
+21. Now it's time to see the data sent. Power off the board. 
+
+22. In the logger window, you will have 2 rows, every row is a message received from the server.
+
+.. image:: _static/actility_logger_messages.jpg
+
+23. If you click on the **+** node you can see the unencrypted data received **Payload (hex):**. 
+
+.. image:: _static/actility_logger_messages2.jpg
+
+24. All messages start with the number 18, the other three number couples are the data read from the accelerometer mounted on the board. You will see the data changed when you have tilted the board and sent the second message. The accelerometer data are marked in red.
 
 .. image:: _static/actility_logger3.jpg
 
-The firmware version **1.5** sends also the light ambient, you can read it from the payload after the number 48. In the following figure it is marked with a red line.
+25. From the firmware version **1.5** sends also the light ambient value, you can read it from the payload after the number 48. In the following figure it is marked with a red line.
 
 .. image:: _static/actility_logger4.jpg
 
