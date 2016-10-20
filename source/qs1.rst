@@ -6,7 +6,7 @@ Quick start guide for firmware 1.0
 ----------------------------------
 
 This guide is valid if you can choose by yourself the devaddr on the registration device of the Actility webpage.
-If you want upgrade the firmware to the newest version then go to :ref:`quick13`.
+If you want upgrade the firmware to the newest version then go to :ref:`quick15`.
 
 In order to see working the Sensor Node Lora you have to register the device on the `activity website <http://actility.thingpark.com/portal/web>`_ clicking on **Create an account**.
 After the registration login and you will access the main page.

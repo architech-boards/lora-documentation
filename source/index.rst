@@ -68,7 +68,6 @@ Contents:
    :maxdepth: 2
 
    qs1.5
-   qs1.3
    qs1
    
    develop
