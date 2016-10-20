@@ -7,6 +7,12 @@ Quick start guide for firmware 1.4 or major
 
 This guide permits to send messages over the Lora network. This page is written for Windows users.
 
+Check on the backside of the board a label like this one:
+
+.. image:: _static/label_prod.jpg
+
+If the serial number *S/N* is lesser than **199** then you have to update the firwmare otherwise skip the next paragraph.
+
 Update firmware
 ***************
 
@@ -229,4 +235,31 @@ As you can see in the first line it is displayed the current value in the regist
 .. image:: _static/actility_logger4.jpg
 
 The dark will be rappresented with a low number and a strong light with a high number.
+
+LEDs functionality
+******************
+
+The board has four LEDs:
+
+.. image:: _static/board_leds.jpg
+
++---------+-----------+-----------------+
+| **LED** | **Color** | **Brief Note**  |
++---------+-----------+-----------------+
+| **1**   | Blue      | RN2483 GPIO_12  |
++---------+-----------+-----------------+
+| **2**   | Red       | RN2483 GPIO_13  |
++---------+-----------+-----------------+
+| **3**   | ---       | not fitted      |
++---------+-----------+-----------------+
+| **4**   | Green     | OpenSDA & MBED  |
++---------+-----------+-----------------+
+| **5**   | Blue      | Firmware status |
++---------+-----------+-----------------+
+
+- **LED1** & **LED2** are connected directly via RN2483 GPIOs. By default, they are turned ON during Power-On and on Reset status of the RN2483. After that the firmware sends commands to the RN2483 in order to turn OFF the LEDs. The purpose is to save battery life.
+
+- **LED4** when the Mini-USB cable is connected the led will be turned ON.
+
+- **LED5** is turned ON when the KL26Z is running sending a message over Lora network. It is turned OFF during the deepsleep phase.
 
