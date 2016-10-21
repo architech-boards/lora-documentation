@@ -78,7 +78,7 @@ Now you are ready to import the project in your KDS.
 Import Project
 **************
 
-1. Download the project `1083_SW_BAEVTSS002_REL5.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/1083_SW_BAEVTSS002_REL5.zip>`_. 
+1. Download the project `1083_SW_BAEVTSS002_REL5b.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/1083_SW_BAEVTSS002_REL5b.zip>`_. 
 
 2. Then go to **File->Import** and select **Existing Projects into Workspace**.
 
@@ -152,7 +152,7 @@ Reset Factory
 
 From the release 1.4 you can reset the RN module throught the menu. Follow the next steps:
 
-1. Download the file `Lora_v15.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v15.bin.zip>`_ and unzip it
+1. Download the file `Lora_v15b.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v15b.bin.zip>`_ and unzip it
 
 2. Connect the board from your PC to the board via micro-USB cable. Open the MBED mass storage.
 

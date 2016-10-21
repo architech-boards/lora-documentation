@@ -18,7 +18,7 @@ Update firmware
 
 Update your board with the lastest firmware avaiable:
 
-1. Download the file `Lora_v15.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v15.bin.zip>`_ and unzip it.
+1. Download the file `Lora_v15b.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v15b.bin.zip>`_ and unzip it.
 
 2. Connect the board to the PC via Mini Usb cable.
 
@@ -126,7 +126,7 @@ The board doesn't have the correct **device address** in order to send correctly
 
 ::
 
-    BAEVTSS002 firmware version 1.5
+    BAEVTSS002 firmware version 1.5b
     RN2483 1.0.1 Dec 15 2015 09:38:06
 
 11. Keeping the **S2** button pressed you will see after some seconds the text **Please release the button S2**. Will be displayed a menu like this one:
