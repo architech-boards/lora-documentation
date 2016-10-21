@@ -34,7 +34,7 @@ Update your board with the lastest firmware avaiable:
 
 .. image:: _static/mbed_open.jpg
 
-7. Copy the file **Lora_v15.bin** into the MBED mass storage.
+7. Copy the file **Lora_v15b.bin** into the MBED mass storage.
 
 8. The Green led on the board will blink while the file is programmed into the device flash memory.
 

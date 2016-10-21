@@ -158,7 +158,7 @@ From the release 1.4 you can reset the RN module throught the menu. Follow the n
 
 .. image:: _static/mbed_open.jpg
 
-3. Copy the **Lora_v15.bin** file into the MBED mass storage
+3. Copy the **Lora_v15b.bin** file into the MBED mass storage
 
 4. The Green led on the board will flash while the file is programmed into the device flash memory.
 
@@ -180,7 +180,7 @@ From the release 1.4 you can reset the RN module throught the menu. Follow the n
 
 ::
 
-    BAEVTSS002 firmware version 1.5
+    BAEVTSS002 firmware version 1.5b
     RN2483 1.0.1 Dec 15 2015 09:38:06
 
 9. Keeping the **S2** button pressed you will see after some seconds the text **Please release the button S2**. Will be displayed a menu like this one:
@@ -211,7 +211,7 @@ From the release 1.4 you can reset the RN module throught the menu. Follow the n
 
 .. note::
 
-    with the sources you can build the firmware 1.5. You can generate the bin file to copy in the mass storage simpy using the Lora.bin
+    with the sources you can build the firmware 1.5b. You can generate the bin file to copy in the mass storage simpy using the Lora.bin
 
     .. image:: _static/lorabin.jpg
 
