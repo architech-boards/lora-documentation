@@ -5,12 +5,14 @@
 Quick start guide for firmware 1.6 or major
 -------------------------------------------
 
+In this guide you will be able to upload your board with the last firmware and join the Lora Network in **ABP** or **OTAA** mode.
+
 Update firmware
 ***************
 
 If you are unsure about which firmware version you have then update your board with the lastest firmware avaiable.
 
-1. Download the file `Lora_v16b.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v16b.bin.zip>`_ and unzip it.
+1. Download the file `Lora_v16.bin.zip <http://downloads.architechboards.com/doc/BAEVTSS002_BAEVTSS003/revB/Lora_v16.bin.zip>`_ and unzip it.
 
 2. Connect the board to the PC via Mini Usb cable.
 
