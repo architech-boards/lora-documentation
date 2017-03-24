@@ -54,7 +54,7 @@ Developement tools
 ******************
 
 Firmware developed using:
-NXP Kinetis Design Studio. For installation and configuration of the project, follow instruction inside :ref:`quick15`
+NXP Kinetis Design Studio. For installation and configuration of the project, follow instruction inside :ref:`quick16`
 
 Document references
 *******************
